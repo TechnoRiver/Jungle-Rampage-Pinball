@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>Jungle Rampage Pinball - Free Browser Pinball Game</title>
+<meta name="title" content="Jungle Rampage Pinball - Free Browser Pinball Game">
+<meta name="description" content="Play Jungle Rampage Pinball free in your browser. A jungle-temple table with ramps, tiger lock, multiball, and a Temple of Gold wizard mode. No download.">
+<meta name="keywords" content="Jungle Rampage Pinball, free pinball, browser pinball, HTML5 pinball, jungle pinball, pinball game, no download, MICRE13B">
+<meta name="author" content="MICRE13B">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#050a06">
+<meta name="color-scheme" content="dark">
+<meta name="application-name" content="Jungle Rampage Pinball">
+<meta name="apple-mobile-web-app-title" content="Jungle Rampage">
+<link rel="canonical" href="https://www.micre13b.com/projects/jungle-rampage-pinball/index.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MICRE13B">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://www.micre13b.com/projects/jungle-rampage-pinball/index.html">
+<meta property="og:title" content="Jungle Rampage Pinball - Free Browser Pinball Game">
+<meta property="og:description" content="Play Jungle Rampage Pinball free in your browser. A jungle-temple table with ramps, tiger lock, multiball, and a Temple of Gold wizard mode. No download.">
+<meta property="og:image" content="https://www.micre13b.com/projects/jungle-rampage-pinball/assets/playfield.webp">
+<meta property="og:image:alt" content="Jungle Rampage Pinball playfield, a jungle temple pinball table">
+<meta property="og:image:type" content="image/webp">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1920">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://www.micre13b.com/projects/jungle-rampage-pinball/index.html">
+<meta name="twitter:title" content="Jungle Rampage Pinball - Free Browser Pinball Game">
+<meta name="twitter:description" content="Play Jungle Rampage Pinball free in your browser. A jungle-temple table with ramps, tiger lock, multiball, and a Temple of Gold wizard mode. No download.">
+<meta name="twitter:image" content="https://www.micre13b.com/projects/jungle-rampage-pinball/assets/playfield.webp">
+<meta name="twitter:image:alt" content="Jungle Rampage Pinball playfield, a jungle temple pinball table">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "Jungle Rampage Pinball",
+  "url": "https://www.micre13b.com/projects/jungle-rampage-pinball/index.html",
+  "image": "https://www.micre13b.com/projects/jungle-rampage-pinball/assets/playfield.webp",
+  "description": "Play Jungle Rampage Pinball free in your browser. A jungle-temple table with ramps, tiger lock, multiball, and a Temple of Gold wizard mode. No download.",
+  "genre": ["Pinball", "Arcade"],
+  "playMode": "https://schema.org/SinglePlayer",
+  "gamePlatform": "Web browser",
+  "operatingSystem": "Web, Windows, macOS, Linux, iOS, Android",
+  "applicationCategory": "Game",
+  "inLanguage": "en",
+  "isPartOf": {
+    "@type": "CollectionPage",
+    "name": "MICRE13B Projects",
+    "url": "https://www.micre13b.com/projects/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "MICRE13B",
+    "url": "https://www.micre13b.com/"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-54S4B88V72"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-54S4B88V72');
+</script>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="loading" aria-busy="true">
+  <div class="boot">
+    <p class="eyebrow">Free browser game</p>
+    <h1>Jungle Rampage Pinball</h1>
+    <p class="blurb">Jungle Rampage Pinball is a free jungle-temple pinball game you play in the browser. Plunge for a skill shot, light the ramps and the top lanes, spell JUNGLE, and lock the tiger for multiball on the way to the Temple of Gold. Nothing to install: open this page and the table launches as soon as the art and playfield are ready.</p>
+    <p class="boot-more"><a href="https://www.micre13b.com/projects/">More projects on MICRE13B</a></p>
+    <noscript><p class="blurb">JavaScript is required to load the table and play.</p></noscript>
+    <div class="bar" id="boot-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-valuetext="0 percent" aria-labelledby="boot-status">
+      <span id="boot-fill"></span>
+    </div>
+    <p id="boot-status">Loading resources 0%</p>
+  </div>
+</div>
+<aside id="sideL" class="side"></aside>
+<canvas id="game" width="1080" height="1920" aria-label="Jungle Rampage Pinball"></canvas>
+<aside id="sideR" class="side"></aside>
+<div id="settings" hidden></div>
+<!-- plain scripts (no modules) so the game also runs from file://. The boot screen in #loading tracks the download, then main.js starts the table. -->
+<script src="assets/sprites.js"></script>
+<script src="js/table.js"></script>
+<script src="js/config.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/physics.js"></script>
+<script src="js/core.js"></script>
+<script src="js/rules.js"></script>
+<script src="js/input.js"></script>
+<script src="js/render.js"></script>
+<script src="js/hud.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
